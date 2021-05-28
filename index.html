@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <title>Mobile-First Responsive Layout</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css.styles.css">
-  <!-- insert google fonts if needed <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
   <body>
       <header>
@@ -17,43 +20,52 @@
                 <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
-            <img src="images/responsive-layout-profile.png" alt="Mockup image of site creator">
+            <img class="me" src="images/responsive-layout-profile.png" alt="Mockup image of site creator">
+            <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development from Treehouse and am excited to put all my skills to use! </p>
         </header>
     <main>
-      <article class="portfolio">
-          <h1>Portfolio</h1>
-            <img src="../images/portfolio-1.png" alt="Mockup of a portolio page">
-          <h2>Marketing Page</h2>
-            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-                <img src="images/portfolio-2.png" alt="Mockup of a marketing page">
-          <h2>Search Page</h2>
-            <p>This project searches through a specific database to find information a user is trying to look up.</p>
-                <img src="images/portfolio-3.png" alt="Mockup of a search page">
-          <h2>Travel App</h2>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-                <img src="images/portfolio-4.png" alt="Mockup of a travel app">
-          <h2>Map of Favorite Spots</h2>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-                <img src="images/portfolio-5.png" alt="Mockup of a mapping app for walks">
-          <h2>Photo Gallery</h2>
-            <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-                <img src="images/portfolio-6.png" alt="Mockup of a photo gallery">
-          <h2>Calculator</h2>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
+      <article class="main-article">
+          <h1 id="portfolio">Portfolio</h1>
+          
+          <img src="/images/portfolio-1.png" alt="Mockup of a marketing page">
+            <h2>Marketing Page</h2>
+              <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
+
+          <img src="images/portfolio-2.png" alt="Mockup of a marketing page">
+            <h2>Search Page</h2>
+              <p>This project searches through a specific database to find information a user is trying to look up.</p>
+
+          <img src="images/portfolio-3.png" alt="Mockup of a search page">
+            <h2>Travel App</h2>
+              <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
+
+          <img src="images/portfolio-4.png" alt="Mockup of a travel app">
+            <h2>Map of Favorite Spots</h2>
+              <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
+
+          <img src="images/portfolio-5.png" alt="Mockup of a mapping app for walks">
+              <h2>Photo Gallery</h2>
+                <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
+
+          <img src="images/portfolio-6.png" alt="Mockup of a photo gallery">
+              <h2>Calculator</h2>
+                <p>Someone can enter in the numbers they want, and press the big blue button and get the result</p>
       </article> 
-      <div class="contact">
-          <a id="contact"><h1>Contact</h1></a>
+    <div class="contact">
+          <h1>Contact</h1>
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
             <p>Phone +1 (111) 555-1234</p>
             <p>Email email@yoursite.com</p>
-      </div>
+    </div>
     </main>
+    <hr>
     <footer>
-        <p>Robbie Ashworth</p>
+        <p class="bottome_name">Robbie Ashworth</p>
+        <p class="mobile_return"><a href="index.html">BACK TO TOP</a></p>
       <ul>
-        <li><a href="#" class="social twitter">Home</a></li>
-        <li><a href="#" class="social linkedin">Portfolio</a></li>
-        <li><a href="#" class="social github">Contact</a></li>
+        <li class="hide"><a href="index.html">Home</a></li>
+        <li class="hide"><a href="#portfolio">Portfolio</a></li>
+        <li class="hide"><a href="#contact">Contact</a></li>
       </ul>
     </footer>
   </body>
