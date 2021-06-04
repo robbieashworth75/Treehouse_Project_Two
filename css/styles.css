@@ -47,7 +47,7 @@ header p {
   width: 90%;
   background-color: lightblue;
   padding: 15px;
-  margin: 5px;
+  margin: 10px;
   font-family: "Asap", sans-serif;
 }
 
@@ -125,9 +125,9 @@ footer h1 {
 }
 .contact p {
   text-align: center;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin: auto;
   margin-bottom: 20px;
+  max-width: 589px;
 }
 
 .phone {
@@ -148,14 +148,12 @@ a:hover {
 .hide {
   display: none;
 }
-/* main_content and project */
-@media (min-width: 320px) {
-}
 
 @media screen and (min-width: 768px) {
   .main_content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .project {
     flex-basis: calc(50% - 20px);
@@ -171,7 +169,73 @@ a:hover {
     background-color: transparent;
     font-family: "Asap", sans-serif;
   }
+  .hero {
+    display: flex;
+    flex-direction: row-reverse;
+    max-width: 1000px;
+    margin: auto;
+  }
+  .mobile_return {
+    display: none;
+  }
+  .hide {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .bottom_name {
+    margin-left: 10px;
+  }
+  .bottom_content,
+  .hide {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: 1024px) {
+  .main_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .project {
+    flex-basis: calc(33% - 20px);
+  }
+
+  .full_page {
+    max-width: 1024px;
+    margin: auto;
+  }
+  .top_name {
+    padding-left: 25px;
+  }
+  .nav {
+    padding-top: 20px;
+    justify-content: center;
+  }
+  .wide_screen {
+    display: flex;
+    justify-content: space-between;
+  }
+  .mobile_return {
+    display: none;
+  }
+  .hide {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  .bottom_name {
+    margin-left: 10px;
+  }
+  .bottom_content,
+  .hide {
+    display: flex;
+    justify-content: space-between;
+  }
 }
