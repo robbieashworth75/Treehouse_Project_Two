@@ -17,6 +17,7 @@ header h1 {
   text-align: center;
   margin-top: 0;
   padding-top: 1em;
+  color: darkblue;
 }
 
 header p {
@@ -70,7 +71,6 @@ header p {
 
 h1,
 h2 {
-  font-size: 2em;
   font-family: "Asap", sans-serif;
   text-align: center;
 }
@@ -82,15 +82,28 @@ p {
 
 main h1 {
   margin-top: 50px;
-  font-size: 1.5em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
 }
 
 main h2 {
   padding-top: 1em;
   padding-bottom: 1em;
 }
-
+.skills_progress {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 1em 2em 2em 2em;
+}
+.skills_progress h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.skills_progress ul {
+  margin-left: 10%;
+  padding-bottom: 2em;
+  list-style-type: circle;
+  font-family: "Roboto", sans-serif;
+}
 hr {
   width: 90%;
   text-align: center;
@@ -119,6 +132,7 @@ footer h1 {
 
 .bottom_name {
   margin-left: 1em;
+  font-family: "Roboto", sans-serif;
 }
 .contact h1 {
   font-size: 1.5em;
@@ -133,12 +147,14 @@ footer h1 {
 .phone {
   display: block;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .email {
   display: block;
   text-align: center;
   padding-bottom: 25px;
+  font-family: "Roboto", sans-serif;
 }
 
 a:hover {
@@ -182,8 +198,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     width: 30%;
-    justify-content: center;
-    margin-right: 10px;
+    margin-right: 20px;
+    font-family: "Asap", sans-serif;
   }
   .bottom_name {
     margin-left: 10px;
@@ -226,9 +242,9 @@ a:hover {
   .hide {
     display: flex;
     flex-direction: row;
-    width: 20%;
-    justify-content: center;
-    margin-right: 10px;
+    width: 30%;
+    margin-right: 20px;
+    font-family: "Asap", sans-serif;
   }
   .bottom_name {
     margin-left: 10px;
